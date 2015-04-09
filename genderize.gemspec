@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'genderize/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "genderize"
+  spec.name          = "genderize_io"
   spec.version       = Genderize::VERSION
   spec.authors       = ["Dilkhush Soni"]
   spec.email         = ["dilkhushsoni2010@gmail.com"]
