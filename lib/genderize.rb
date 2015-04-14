@@ -1,7 +1,6 @@
 require 'net/http'
 require 'json'
 
-BASE_URL = 'https://api.genderize.io?'
 module Genderize
   def create_query names
     if names.class == Array
@@ -14,7 +13,8 @@ module Genderize
   end
 
   def gender names
-    uri = URI(BASE_URL << create_query(names))
+    base_url = 'https://api.genderize.io?'
+    uri = URI(base_url + create_query(names))
     begin
       response = Net::HTTP.get(uri)
       JSON.parse(response)
