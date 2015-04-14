@@ -1,6 +1,6 @@
 # Genderize
 
-TODO: Write a gem description
+This gem will give you your gender based on your name.
 
 ## Installation
 
@@ -20,11 +20,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+If you want to use this its quite simple:
+
+    $ include Genderize # To directly use gender method
+    $ res = gender "kareena"
+    #output {"name"=>"kareena", "gender"=>"female", "probability"=>"1.00", "count"=>5}
+    $ res["gender"] # => female
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/genderize/fork )
+1. Fork it ( https://github.com/dilkhush/genderize/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
